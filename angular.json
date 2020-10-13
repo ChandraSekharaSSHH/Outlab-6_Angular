@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "outlab6Angular"
+    }
+  },
+  "defaultProject": "outlab6Angular",
+  "cli": {
+    "analytics": false
+  }
 }
