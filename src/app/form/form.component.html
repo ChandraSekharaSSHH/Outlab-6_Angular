@@ -1,1 +1,29 @@
 <p>form works!</p>
+<form [formGroup]='form'>
+    <div>
+        <label>Name:
+            <input formControlName="name">
+        </label>
+    </div>
+    <div>
+        <label>Email:
+            <input formControlName="email">
+        </label>
+    </div>
+    <div>
+        <label>Feedback:
+            <label for='Great'>Great:</label>
+            <input type="radio" name="feedback" value="Great" id='Great' formControlName="feedback">
+            <label for='Okay'>Okay:</label>
+            <input type="radio" name="feedback" value="Okay" id="Okay" formControlName="feedback" >
+            <label for='Not good'>Not good:</label>
+            <input type="radio" name="feedback" value="Not good" id="Not good" formControlName="feedback">
+        </label>
+    </div>
+    <div>
+        <label>Comments
+            <textarea formControlName="comment" id="" cols="30" rows="10"></textarea>
+        </label>
+    </div>
+    <input type="submit" value="Submit your Feedback now!" (click)=onsubmit()>
+</form>
