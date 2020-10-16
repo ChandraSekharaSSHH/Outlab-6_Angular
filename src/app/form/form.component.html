@@ -1,29 +1,37 @@
-<p>form works!</p>
-<form [formGroup]='form'>
-    <div>
-        <label>Name:
-            <input formControlName="name">
-        </label>
-    </div>
-    <div>
-        <label>Email:
-            <input formControlName="email">
-        </label>
-    </div>
-    <div>
-        <label>Feedback:
-            <label for='Great'>Great:</label>
-            <input type="radio" name="feedback" value="Great" id='Great' formControlName="feedback">
-            <label for='Okay'>Okay:</label>
-            <input type="radio" name="feedback" value="Okay" id="Okay" formControlName="feedback" >
-            <label for='Not good'>Not good:</label>
-            <input type="radio" name="feedback" value="Not good" id="Not good" formControlName="feedback">
-        </label>
-    </div>
-    <div>
-        <label>Comments
-            <textarea formControlName="comment" id="" cols="30" rows="10"></textarea>
-        </label>
-    </div>
-    <input type="submit" value="Submit your Feedback now!" (click)=onsubmit()>
-</form>
+<!-- <p>form works!</p> -->
+<div class="container">
+
+    <form [formGroup]='form'>
+        <div class="formelement">
+            <label for="namefield">Name:</label>
+            <input id="namefield" formControlName="name" >
+        </div>
+        <div class="formelement">
+            <label for="emailfield">Email:</label>
+            <input id="emailfield" formControlName="email">
+        </div>
+        <div class="formelement"> 
+            <label>Feedback:
+                <ul>
+                    <li>
+                        <input type="radio" name="feedback" value="Great" id='Great' formControlName="feedback" class="radio-btn">
+                        <label for='Great'>Great:</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" name="feedback" value="Okay" id="Okay" formControlName="feedback" class="radio-btn">
+                        <label for='Okay'>Okay:</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="feedback" value="Not good" id="Not good" formControlName="feedback" class="radio-btn">
+                        <label for='Not good'>Not good:</label>
+                    </li>
+                </ul> 
+            </label>
+        </div>
+        <div class="formelement">
+            <label for="commentfield">Comments:</label><br>
+            <textarea id='commentfield' formControlName="comment" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit your Feedback now!" (click)=onsubmit() class="submit-element">
+    </form>
+</div>

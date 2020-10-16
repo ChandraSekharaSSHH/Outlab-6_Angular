@@ -1,0 +1,27 @@
+div{
+    background-color:black;
+    color: cornsilk;
+    width:auto;
+    height:50px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+span.align-left{
+    float: left;
+    margin-left:10px;
+    margin-top:10px;
+}
+span.align-right{
+    float:right;
+}
+
+a{  
+    color:darkgrey;
+    display: inline-block;
+    text-decoration: none;
+    margin:10px 15px;
+}
+a:hover{
+    background-color: ghostwhite;
+    color: indigo;
+}
